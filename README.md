@@ -1,7 +1,6 @@
 
 # Team_8_Collaborative_Filtering
 
-## Data :-
 ## user Interface
 
 ![ezgif-6-5348e44210](https://github.com/Abhicoder03/Team_8_Collaborative_Filtering/assets/76257252/0ffdb973-a2ac-484f-97b5-e9c4ca2d9f92)
@@ -12,6 +11,8 @@
 
 ![ezgif-6-d4ba1eee64](https://github.com/Abhicoder03/Team_8_Collaborative_Filtering/assets/76257252/198580a8-07c0-4bf7-aaed-cec65dd54447)
 
+
+## Data :-
 
  - The dataset used in this Assignment is the Grocery and Gourmet Food from Amazon Product Reviews,which contains product and user interactions. 
  - The dataset consists of two files, one JSON file with product information and the other with user interaction information.
@@ -29,10 +30,6 @@
  - **reviewTime** - time of the review (raw)
  - **image** - images that users post after they have received the product
 
-
-
-
-
 ## General Steps:
 
 **Preprocess data**: preprocess the data and filter out irrelevant data, generate user-item rating matrix based on the data
@@ -43,20 +40,21 @@
 
 **Generate recommendations**: Once the model has been trained, it can be used to generate recommendations for users. This could involve using the model to identify similar users or items to the ones that a user has already interacted with, and then recommending items that those similar users or items have also interacted with.
 
-**Evaluate the model**: To determine the accuracy of the model, use metrics such as precision, recall, and F1 score to evaluate its performance. This will help identify areas for improvement and ensure that the model is generating accurate recommendations.
+**Evaluate the model**: To determine the accuracy of the model, use metrics such as precision, recall, and RMSE, MAE to evaluate its performance. This will help identify areas for improvement and ensure that the model is generating accurate recommendations.
 
 
 ## Files Overview:
- - **EDA & Data Preprocessing.ipynb** : Insights from data and visualization Toy-Data Generation [Quick Recipes]
- - **Matrix Factorization.ipynb** : Collaborative filtering based Recommendation system with Matrix Factorization (Model based - SVD)
- - **MultiRound_Baseline.ipynb** : Multi-Round Recommendation system based on Baseline estimation approach
- - **Latent_Factor_Models.ipynb** : Recommedation system based on Latent Factor Model
- - **Item_Item_Memory_Based.ipynb** : Item Item collborative Recommendation system without Matrix Factorization(Memory Based)
- - **Item_Item_Memory_Based-MRR(BASIC).ipynb** : Item Item collborative Multiround Recommendation system (Memory Based)
- - **Item_Item_Memory_Based-MRR(DYNAMIC).ipynb** : Item Item collborative Multiround Recommendation system (Memory Based)
- - **User_User_Memory_based_Recommendation_System.ipynb** : User User collborative Recommendation system (Memory Based)
+ - **EDA.ipynb** : Insights from data and visualization.
+ - **Matrix_Factorization.ipynb** : Model based Recommendation system with Matrix Factorization.
+ - **Multi_Round_Recommend.ipynb** : Multi-Round Recommendation system based on item item collaborative.
+ - **Item_Item_Collaborative.ipynb** : Item Item Collborative Recommendation system without Matrix Factorization (Memory Based)
+ - **SVD_KNN.ipynb** : Combination of Singular Value Decomposition (SVD) and k-Nearest Neighbors (k-NN) algorithms to provide personalized recommendations.
+ - **User_User_Collaborative.ipynb** : User User collborative Recommendation system (Memory Based)
+ - **Hybrid.ipynb** - It is based on content based and collobarative based recommendation system.
 
-Contributors :-
+
+**NOTE** - Based on our observation, Matrix Factorization based recommendation system is the most accurate model with **RMSE 0.8754**.
+## Contributors :-
 
 - Vishaka Nair
 - Srushti Bhagchandani
@@ -65,4 +63,7 @@ Contributors :-
 - Abhishek Choudhary
 
 <p align="center">Made with :heart:</p>
+
+
  
+
