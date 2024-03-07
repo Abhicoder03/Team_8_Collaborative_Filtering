@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="/Users/shyam/Downloads/review/templates/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<style>/* styles.css */
+    body {
+    background-color: #333; /* Dark background */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #e0e5ec; /* Light text for contrast */
+}
+
+.container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #3b3b3b; /* Dark card background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 5px 5px 10px #2b2b2b, /* Outer shadow */
+               -5px -5px 10px #4b4b4b; /* Inner light */
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: none; /* Subtle interaction */
+}
+
+.card-img-top {
+    width: 100%;
+    min-height: 150px; /* Adjust this value as needed */
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    padding: 2px 16px;
+}
+
+.card-title {
+    margin-bottom: 15px;
+    color: #a5b1c2; /* Soft color for titles on dark background */
+}
+
+h1 {
+    color: #ccd6f6; /* Lighter color for headings */
+    font-size: 2.5rem;
+}
+
+button {
+    background: #3b3b3b; /* Neumorphic button on dark theme */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #2b2b2b, /* Outer shadow */
+               -4px -4px 8px #4b4b4b; /* Inner light */
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #e0e5ec;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: none; /* Button press effect */
+}
+
+footer {
+    background-color: #080808;
+    color: #e0e5ec;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Additional styles for neumorphism on dark theme */
+input[type="submit"], input[type="text"], select, textarea {
+    background: #3b3b3b;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 8px #2b2b2b,
+                inset -4px -4px 8px #4b4b4b;
+    margin: 10px 0;
+    width: calc(100% - 20px);
+    color: #e0e5ec;
+}
+
+input[type="submit"]:hover {
+    box-shadow: none;
+}
+    /* Add more styles as needed */</style>
+<body>
+    
+    <div class="container">
+        <h1 class="my-4">Your Recommendations</h1>
+        <div class="row">
+            {% for product in similar_products %}
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="{{ product.image }}" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Similar Product ASIN: {{ product.asin }}</h4>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% for product in recommended_products %}
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="{{ product.image }}" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Recommended Product ASIN: {{ product.asin }}</h4>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
