@@ -18,6 +18,10 @@
  - **unixReviewTime** - time of the review (unix time)
  - **reviewTime** - time of the review (raw)
  - **image** - images that users post after they have received the product
+ - ![image](https://github.com/Abhicoder03/Team_8_Collaborative_Filtering/assets/76257252/6bf36256-f191-47bd-9161-816c6e88acc6)
+
+
+
 
 ## General Steps:
 
