@@ -3,6 +3,7 @@
 
 ## Data :-
 
+![ezgif-6-5348e44210](https://github.com/Abhicoder03/Team_8_Collaborative_Filtering/assets/76257252/0ffdb973-a2ac-484f-97b5-e9c4ca2d9f92)
  - The dataset used in this Assignment is the Grocery and Gourmet Food from Amazon Product Reviews,which contains product and user interactions. 
  - The dataset consists of two files, one JSON file with product information and the other with user interaction information.
 
