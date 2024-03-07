@@ -1,16 +1,7 @@
 
 # Team_8_Collaborative_Filtering
 
-## user Interface
-
-![ezgif-6-5348e44210](https://github.com/Abhicoder03/Team_8_Collaborative_Filtering/assets/76257252/0ffdb973-a2ac-484f-97b5-e9c4ca2d9f92)
-
-![ezgif-6-f44545cfe4](https://github.com/Abhicoder03/Team_8_Collaborative_Filtering/assets/76257252/c64ea14e-8081-4b4d-9cdc-b088fb07d522)
-
-![ezgif-6-67abbf4038](https://github.com/Abhicoder03/Team_8_Collaborative_Filtering/assets/76257252/36d48ecc-1ea3-4d61-ad9d-0b3ab7f23f4a)
-
-![ezgif-6-d4ba1eee64](https://github.com/Abhicoder03/Team_8_Collaborative_Filtering/assets/76257252/198580a8-07c0-4bf7-aaed-cec65dd54447)
-
+![Lavender and Purple Modern Project Timeline Infographic](https://github.com/Abhicoder03/Team_8_Collaborative_Filtering/assets/57633882/df4d5a52-4ee4-43f4-be9d-70de933c7684)
 
 ## Data :-
 
